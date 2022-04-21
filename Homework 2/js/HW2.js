@@ -11,7 +11,7 @@ if (count >= 90 && count <= 100) {
 }
 
 let sum = 100;
-let ticketNum = 1234;
+let ticketNum = '1234';
 switch (ticketNum) {
     case '4653':
         console.log(`К оплате ${sum * 0.7} р.`);
@@ -53,8 +53,7 @@ while (true) {
     }
     if (usersNum < secret) {
         console.log("Загаданное число больше");
-    } 
-    if (usersNum == secret) {
+    } else {
         console.log("Вы угадали!");
         break;
     }
