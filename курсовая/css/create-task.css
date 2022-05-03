@@ -1,0 +1,34 @@
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1fbfb781;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 67%;
+}
+
+form :nth-child(odd) {
+    width: 100%;
+}
+form :nth-child(even) {
+    width: 100%;
+}
+
+label, h1 {
+    color: #031163;
+}

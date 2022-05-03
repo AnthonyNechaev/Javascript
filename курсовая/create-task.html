@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление задачи</title>
+    <link rel="stylesheet" href="css/create-task.css">
+</head>
+<body>
+    <h1>Добавление задачи</h1>
+    <span class="success"></span>
+    <form name="create-task" novalidate>
+        <label for="1">Название задачи</label>
+        <input id="1" type="text" name="title" placeholder="Введите название задачи" maxlength="20" minlength="3">
+        <span class="title error"></span>
+        <label for="2">Описание задачи</label>
+        <textarea id="2" name="description" placeholder="Введите описание задачи" rows="5" cols="20"></textarea>
+        <label for="3">Срок выполнения</label>
+        <input id="3" type="datetime" name="date" placeholder="YYYY-MM-DD">
+        <span class="date error"></span>
+        <input type="submit" value="Добавить задачу">
+    </form>
+    <script src="js/create-task.js"></script>
+</body>
+</html>
