@@ -32,3 +32,14 @@ form :nth-child(even) {
 label, h1 {
     color: #031163;
 }
+
+#man-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#man-input div {
+    display: flex;
+    flex-direction: row;
+}

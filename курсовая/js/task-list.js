@@ -15,6 +15,19 @@ if (tasks) {
         `;
         document.querySelector(".task-list").append(newTask);
         newTask.addEventListener("click", selectTask);
+
+        let menArr = tasks[i].men;
+        if (menArr.length) {
+            let menBlock = document.createElement("article");
+            menBlock.innerText = `Участники: `;
+            for (let man of menArr) {
+                let newMan = document.createElement("p");
+                newMan.innerText = `${man}`;
+                menBlock.append(newMan);
+            }
+            newTask.append(menBlock);
+        }
+        
     }
 } else {
     let message = document.createElement("p");
